@@ -6,7 +6,7 @@
 /* Body */
 
 body {
-  background-color: rgb(255, 232, 235);
+  background-color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -24,6 +24,7 @@ header {
 
 .tamimg {
   width: 130px;
+  margin-left: 20px;
 }
 
 .letranav {
@@ -33,7 +34,11 @@ header {
   padding-left: 30px;
 }
 
-ßnav ul li {
+.letranav a:hover {
+  color: silver;
+}
+
+nav ul li {
   list-style: none;
   display: inline-block;
   margin: 0 10px;
@@ -70,6 +75,23 @@ h2 {
   padding-inline: 60px;
 }
 
+/* Cards */
+
+.colorbtn {
+  background-color: rgb(81, 53, 40);
+}
+
+.margincards {
+  margin: 24px;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgCard {
+  padding: 0;
+}
+
 /* Footer */
 
 .espacioFooter {
@@ -86,6 +108,11 @@ footer {
 
 .tituloGaleria {
   margin-bottom: 40px;
+}
+
+.tamañoimggal {
+  width: 3200px;
+  height: 650px;
 }
 
 .contenedorImagenes {
@@ -105,7 +132,7 @@ footer {
 
 .contenedorGaleria p {
   background-color: #383838;
-  color: rgb(255, 234, 249);
+  color: rgb(255, 255, 255);
   padding: 10px;
   font-weight: 800;
   font-size: 12px;
@@ -119,6 +146,10 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.marginh4 {
+  margin-bottom: 90px;
 }
 
 /* Iframe */
@@ -223,4 +254,10 @@ textarea {
 
 .espacioBottomx2 {
   margin-bottom: 60px;
+}
+
+/* carrousel */
+.tamañocarrousel {
+  width: 1500px;
+  height: 450px;
 }
