@@ -95,12 +95,7 @@ h2 {
 
 /* Footer */
 
-.espacioFooter {
-  margin-bottom: 10px;
-}
-
 footer {
-  margin: 30px;
   padding: 30px;
   border-top: 1px solid #5b5b5b;
 }
@@ -260,7 +255,29 @@ textarea {
 }
 
 /* carrousel */
-.tamañocarrousel {
-  width: 1500px;
-  height: 450px;
+.carousel-inner {
+  height: 0;
+  padding-bottom: 25%;
+}
+
+.carousel-item {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Vista tablet */
+/* 768px-1023px */
+
+@media (max-width: 1023px) {
+  /* header */
+  .encabezado {
+  }
 }
