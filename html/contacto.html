@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
@@ -21,7 +21,7 @@
     <header class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img class="tamimg" src="./img/pngegg.png" alt="logo de cafe" />
+          <img class="tamimg" src="../img/pngegg.png" alt="logo de cafe" />
         </a>
         <button
           class="navbar-toggler"
@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 letranav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
+              <a class="nav-link" aria-current="page" href="../index.html"
                 >Home</a
               >
             </li>
@@ -51,7 +51,7 @@
               <a class="nav-link" href="./nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
+              <a class="nav-link active" href="./contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -59,7 +59,7 @@
     </header>
 
     <main>
-      <h2 class="tituloPrincipal">Contacto</h2>
+      <h1 class="tituloPrincipal">Contacto</h1>
 
       <form class="contenedorCampo">
         <label for="nombre">Nombre</label>
@@ -69,7 +69,7 @@
         <input type="text" placeholder="Ej: Abregúl" id="apellido" required />
 
         <label for="Correo electronico">Correo electronico</label>
-        <input
+        <input:mail
           type="text"
           placeholder="Ej: abrilabregu@gmail.com"
           id="correo electronico"
@@ -90,12 +90,14 @@
       </form>
     </main>
 
+    <!-- footer -->
+
     <footer>
-      <h3 class="espacioFooter">
+      <h2 class="espacioFooter">
         Marca Coffe Shop es una marca registrada. © 2023 Diseño y desarrollo por
         Abril.
-      </h3>
-      <h4>GRACIAS POR TU VISITA ¡HASTA PRONTO!</h4>
+      </h2>
+      <h3 class="espacioFooter2">GRACIAS POR TU VISITA ¡HASTA PRONTO!</h3>
     </footer>
 
     <!-- BS -->

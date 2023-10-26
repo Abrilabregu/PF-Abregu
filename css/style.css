@@ -69,6 +69,7 @@ h2 {
 
 .tituloSecundario {
   margin-bottom: 40px;
+  font-weight: 400;
 }
 
 .parrafoPrincipal {
@@ -95,9 +96,19 @@ h2 {
 
 /* Footer */
 
-footer {
-  padding: 30px;
-  border-top: 1px solid #5b5b5b;
+.espacioFooter {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.espacioFooter2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.logoFooter {
+  width: 150px;
+  margin-left: 30px;
 }
 
 /* Galeria */
@@ -148,6 +159,7 @@ footer {
 
 .marginh4 {
   margin-bottom: 90px;
+  font-weight: 300;
 }
 
 /* Iframe */
@@ -213,7 +225,12 @@ textarea {
 /* Menu */
 
 .tituloMenu {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.tituloMenu2 {
+  font-weight: 400;
+  margin-bottom: 80px;
 }
 
 .contenedorImg {
@@ -278,6 +295,19 @@ textarea {
 
 @media (max-width: 1023px) {
   /* header */
+
   .encabezado {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .encabezado .boton {
+    display: none;
+  }
+
+  /* Banner */
+  .bannerContenido p {
+    font-size: 2.5rem;
   }
 }
