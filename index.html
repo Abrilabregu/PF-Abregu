@@ -129,9 +129,9 @@
 
     <!-- MAIN -->
     <main>
-      <h1 class="tituloPrincipal">Coffe Shop</h1>
+      <h1 class="tituloPrincipal">Coffee Shop</h1>
 
-      <h2 class="tituloSecundario">Bienvenidos al rincon de los aromas</h2>
+      <h2 class="tituloSecundario">"Más que un Café, una Experiencia"</h2>
       <p class="parrafoPrincipal">
         Bienvenidos a nuestro rincón de aromas y sabores. Descubre la magia del
         café en Coffe Shop.Nuestro compromiso es traerte lo mejor en cada taza.
@@ -164,7 +164,9 @@
         <div class="card-body">
           <h3 class="card-title">Cappuccino Perfecto</h3>
           <p class="card-text">Disfruta de la mezcla ideal de espresso robusto, leche suavemente espumada y un toque de cacao en cada sorbo. Un deleite italiano en tu taza</p>
-          <a href="#" class="btn btn-primary colorbtn">Comprar</a>
+          <button type="button" class="btn btn-primary colorBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Añadir al carrito de compras
+          </button>
         </div>
       </div>
       <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
@@ -172,7 +174,9 @@
         <div class="card-body">
           <h3 class="card-title">Latte Clásico</h3>
           <p class="card-text">Sumérgete en la calidez reconfortante de nuestro latte. Espresso recién hecho y leche perfectamente vaporizada, una experiencia que te acoge</p>
-          <a href="#" class="btn btn-primary colorbtn">Comprar</a>
+          <button type="button" class="btn btn-primary colorBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Añadir al carrito de compras
+          </button>
         </div>
       </div>
 
@@ -183,7 +187,9 @@
           <p class="card-text">Nuestro café negro es una expresión de la simplicidad y la intensidad. Espresso de calidad en su forma más pura y sin distracciones.
 
           </p>
-          <a href="#" class="btn btn-primary colorbtn">Comprar</a>
+          <button type="button" class="btn btn-primary colorBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Añadir al carrito de compras
+          </button>
         </div>
       </div>
 
@@ -192,7 +198,9 @@
         <div class="card-body">
           <h3 class="card-title">La Magia de la Canela</h3>
           <p class="card-text"> Nuestro café con canela es una experiencia que despierta tus sentidos. Un toque de especia que eleva el sabor del café.Un regalo para tu paladar</p>
-          <a href="#" class="btn btn-primary colorbtn">Comprar</a>
+          <button type="button" class="btn btn-primary colorBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Añadir al carrito de compras
+          </button>
         </div>
       </div>
       <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
@@ -204,7 +212,9 @@
         <div class="card-body">
           <h3 class="card-title">Cappuccino Perfecto</h3>
           <p class="card-text">Disfruta de la mezcla ideal de espresso robusto, leche suavemente espumada y un toque de cacao en cada sorbo. Un deleite italiano en tu taza</p>
-          <a href="#" class="btn btn-primary colorbtn">Comprar</a>
+          <button type="button" class="btn btn-primary colorBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Añadir al carrito de compras
+          </button>
         </div>
       </div>
       <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
@@ -212,31 +222,35 @@
         <div class="card-body">
           <h3 class="card-title">Latte Clásico</h3>
           <p class="card-text">Sumérgete en la calidez reconfortante de nuestro latte. Espresso recién hecho y leche perfectamente vaporizada, una experiencia que te acoge</p>
-          <a href="#" class="btn btn-primary colorbtn">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
-        <img src="img/expresso.jpg" class="card-img-top" alt="imagen de un cafe negro" />
-        <div class="card-body">
-          <h3 class="card-title">Puro y Sencillo</h3>
-          <p class="card-text">Nuestro café negro es una expresión de la simplicidad y la intensidad. Espresso de calidad en su forma más pura y sin distracciones.
-
-          </p>
-          <a href="#" class="btn btn-primary colorbtn">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
-        <img src="img/cafeconcanela.jpg" class="card-img-top" alt="Imagen de un café con canela" />
-        <div class="card-body">
-          <h3 class="card-title">La Magia de la Canela</h3>
-          <p class="card-text"> Nuestro café con canela es una experiencia que despierta tus sentidos. Un toque de especia que eleva el sabor del café.Un regalo para tu paladar</p>
-          <a href="#" class="btn btn-primary colorbtn">Comprar</a>
+          <button type="button" class="btn btn-primary colorBtn hoverCards" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Añadir al carrito de compras
+          </button>
         </div>
       </div>
 
 
+      <!-- MODAL BS -->
+     
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compras</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Seguro que deseas agregar este producto al carrito?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary colorBtn">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
     
 
      
