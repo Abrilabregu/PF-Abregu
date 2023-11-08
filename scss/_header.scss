@@ -1,0 +1,53 @@
+/* header */
+@mixin estilo {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header {
+  border-bottom: 1px solid $color-boton-negro;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+}
+
+.tamimg {
+  width: 130px;
+  margin-left: 20px;
+}
+
+.letranav {
+  font-size: 20px;
+  font-weight: semibold;
+  text-transform: uppercase;
+  padding-left: 30px;
+
+  a:hover {
+    color: silver;
+  }
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  @include estilo;
+  font-weight: bold;
+  color: $color-boton-marron;
+}
+
+.encabezado {
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+
+  .boton {
+    display: none;
+  }
+}

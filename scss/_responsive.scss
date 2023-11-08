@@ -1,0 +1,17 @@
+/* Responsive */
+
+/* Vista tablet */
+/* 768px-1023px */
+
+@media (max-width: 1023px) {
+  /* header */
+  .encabezado {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+
+    .boton {
+      display: none;
+    }
+  }
+}

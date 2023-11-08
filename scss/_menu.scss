@@ -1,0 +1,30 @@
+/* Menu */
+
+.tituloMenu {
+  margin-bottom: 20px;
+}
+
+.tituloMenu2 {
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.contenedorImg {
+  margin: 30px;
+  border: 2px solid #5b5b5b;
+  border-radius: 100%;
+  width: 200px;
+}
+
+.imgMenu {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.contenedorMenu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

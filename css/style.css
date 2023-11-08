@@ -1,21 +1,20 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
 /* Body */
-
 body {
   background-color: rgb(255, 255, 255);
   text-align: center;
 }
 
 /* header */
-
 header {
   border-bottom: 1px solid black;
-  text-align: center;
   padding: 10px 20px;
+  text-align: center;
 }
 
 .logo {
@@ -33,7 +32,6 @@ header {
   text-transform: uppercase;
   padding-left: 30px;
 }
-
 .letranav a:hover {
   color: silver;
 }
@@ -48,182 +46,24 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: rgb(87, 20, 20);
+  color: rgb(81, 53, 40);
 }
 
-/* Main */
-
-main {
-  margin: 30px;
-  padding: 30px;
+.encabezado {
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+}
+.encabezado .boton {
+  display: none;
 }
 
-h1,
-h2 {
-  text-decoration: 20px 0px;
-}
-
-.tituloPrincipal {
-  margin-bottom: 20px;
-}
-
-.tituloSecundario {
-  margin-bottom: 40px;
-  font-weight: 400;
-}
-
-.parrafoPrincipal {
-  padding-inline: 60px;
-}
-
-/* Cards */
-
-.colorBtn {
-  background-color: rgb(81, 53, 40);
-  border-color: rgb(81, 53, 40);
-}
-
-.margincards {
-  margin: 24px;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
-}
-
-.imgCard {
-  padding: 0;
-}
-
-/* Footer */
-
-.espacioFooter {
-  margin-top: 40px;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-.espacioFooter2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.logoFooter {
-  width: 150px;
-  margin-left: 30px;
-}
-
-/* Galeria */
-
-.tituloGaleria {
-  margin-bottom: 40px;
-}
-
-.tamañoimggal {
-  margin: 24px;
-  gap: 32px;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedorImagenes {
-  margin: 5%;
-  border: 3px solid #5b5b5b;
-  border-radius: 16px;
-  height: 600px;
-  width: 400px;
-}
-
-.imgGaleria {
-  display: block;
-  height: 600px;
-  width: 400px;
-  border-radius: 13px;
-}
-
-.contenedorGaleria p {
-  background-color: #383838;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  font-weight: 800;
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-top: 15px;
-  border-radius: 14px;
-}
-
-.contenedorGaleria {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.marginh4 {
-  margin-bottom: 90px;
-  font-weight: 300;
-}
-
-/* Iframe */
-
-iframe {
-  display: block;
-  margin: auto;
-}
-
-/* Contacto */
-.tituloContacto {
-  margin-bottom: 40px;
-}
-
-@media (min-width: 900px) {
-  .contenedorCampo {
-    margin-inline: 200px !important;
-  }
-}
-
-.contenedorCampo {
-  margin-inline: 0px;
-}
-
-form {
-  margin-top: 30px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 4px;
-  color: black;
-}
-
-input[type="text"],
-textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 16px;
-  font-size: 12px;
-  margin-bottom: 16px;
-  resize: none;
-  margin-bottom: 60px;
-}
-
-.botonContacto {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 12px;
-  cursor: pointer;
-  margin-top: 10px;
-  padding-left: 80px;
-  padding-right: 80px;
-  margin-bottom: 60px;
+/* Banner */
+.bannerContenido p {
+  font-size: 2.5rem;
 }
 
 /* Menu */
-
 .tituloMenu {
   margin-bottom: 20px;
 }
@@ -253,8 +93,56 @@ textarea {
   justify-content: center;
 }
 
-/* Sobre nosotros */
+.tituloGaleria {
+  margin-bottom: 0px;
+}
 
+.tamañoimggal {
+  margin: 24px;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorImagenes {
+  margin: 5%;
+  border: 3px solid #5b5b5b;
+  border-radius: 16px;
+  height: 600px;
+  width: 400px;
+}
+
+.imgGaleria {
+  display: block;
+  height: 600px;
+  width: 400px;
+  border-radius: 13px;
+}
+
+.contenedorGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorGaleria p {
+  background-color: #383838;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  border-radius: 14px;
+}
+
+.marginh4 {
+  margin-bottom: 90px;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+/* Sobre nosotros */
 .tituloNosotros {
   margin-bottom: 40px;
 }
@@ -271,6 +159,131 @@ textarea {
   margin-bottom: 60px;
 }
 
+/* Contacto */
+.tituloContacto {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 900px) {
+  .contenedorCampo {
+    margin-inline: 200px !important;
+  }
+}
+.contenedorCampo {
+  margin-inline: 0px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: black;
+}
+
+input[type=text],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 16px;
+  font-size: 12px;
+  margin-bottom: 16px;
+  resize: none;
+  margin-bottom: 60px;
+}
+
+.botonContacto {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 60px;
+}
+
+/* Footer */
+.espacioFooter {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.espacioFooter2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.logoFooter {
+  width: 150px;
+  margin-left: 30px;
+}
+
+/* Responsive */
+/* Vista tablet */
+/* 768px-1023px */
+@media (max-width: 1023px) {
+  /* header */
+  .encabezado {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .encabezado .boton {
+    display: none;
+  }
+}
+/* Main */
+main {
+  margin: 30px;
+  padding: 30px;
+}
+
+h1,
+h2 {
+  text-decoration: 20px 0px;
+}
+
+.tituloPrincipal {
+  margin-bottom: 20px;
+}
+
+.tituloSecundario {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.parrafoPrincipal {
+  padding-inline: 60px;
+}
+
+/* Cards */
+.colorBtn {
+  background-color: rgb(81, 53, 40);
+  border-color: rgb(81, 53, 40);
+}
+
+.margincards {
+  margin: 24px;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgCard {
+  padding: 0;
+}
+
 /* carrousel */
 .carousel-inner {
   height: 0;
@@ -284,30 +297,9 @@ textarea {
   bottom: 0;
   left: 0;
 }
-
 .carousel-item img {
   height: 100%;
   object-fit: cover;
 }
 
-/* Vista tablet */
-/* 768px-1023px */
-
-@media (max-width: 1023px) {
-  /* header */
-
-  .encabezado {
-    height: auto;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .encabezado .boton {
-    display: none;
-  }
-
-  /* Banner */
-  .bannerContenido p {
-    font-size: 2.5rem;
-  }
-}
+/*# sourceMappingURL=style.css.map */

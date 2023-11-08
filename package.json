@@ -1,0 +1,19 @@
+{
+  "name": "segunda-entrega",
+  "version": "1.0.0",
+  "description": "Bienvenidos a mi segunda PreEntrega. Las dos paginas a eleccion son el home y galeria. Saludos! <3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abrilabregu/PreEntrega2-Abregu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abrilabregu/PreEntrega2-Abregu/issues"
+  },
+  "homepage": "https://github.com/Abrilabregu/PreEntrega2-Abregu#readme"
+}
