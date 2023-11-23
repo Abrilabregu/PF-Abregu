@@ -251,6 +251,10 @@ main {
 }
 
 /* CONTACTO*/
+.container {
+  max-width: 720px;
+}
+
 .tituloContactoGal {
   margin-bottom: 10px;
 }
