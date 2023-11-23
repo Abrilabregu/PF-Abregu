@@ -255,11 +255,6 @@ main {
   margin-bottom: 10px;
 }
 
-@media (min-width: 900px) {
-  .contenedorCampo {
-    margin-inline: 200px !important;
-  }
-}
 .contenedorCampo {
   margin-inline: 0;
 }
@@ -292,6 +287,20 @@ textarea {
   margin-bottom: 60px;
 }
 
+.botonContactoContainer {
+  margin-bottom: 60px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 550px) {
+  .botonContactoContainer {
+    flex-direction: column;
+  }
+}
+
 .botonContacto {
   background-color: black;
   color: white;
@@ -299,11 +308,7 @@ textarea {
   padding: 10px 20px;
   border-radius: 8px;
   font-size: 12px;
-  cursor: pointer;
-  margin-top: 10px;
-  padding-left: 80px;
-  padding-right: 80px;
-  margin-bottom: 60px;
+  width: 100%;
 }
 
 /* Footer */
