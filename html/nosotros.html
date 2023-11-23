@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Metaetiquetas -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="stamos emocionados de que quieras conocernos un poco mejor. Nuestro viaje comenzó con una pasión compartida por el café y un deseo de ofrecer una experiencia única a nuestros clientes. Aquí en 'Coffee Shop', no solo servimos café, sino que también servimos sonrisas, momentos especiales y la esencia de la hospitalidad." />
-    <title>Cafeteria | Coffee Shop</title>
+    <meta
+      name="description"
+      content="Estamos emocionados de que quieras conocernos un poco mejor.ß Aquí en 'Coffee Shop', no solo servimos café, sino que también servimos sonrisas, momentos especiales y la esencia de la hospitalidad."
+    />
+    <title>Sobre nosotros | Coffee Shop</title>
 
-    <!-- BS -->
+    <!-- CSS Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,51 +20,64 @@
 
     <!-- MI CSS PERSONAL -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <!-- NAVBAR BS -->
+  <body>
+    <!-- NAVBAR BS -->
 
-  <header class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img class="tamimg" src="../img/pngegg.png" alt="logo de cafe" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 letranav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./menu.html">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./galeria.html">Galeria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
-          </li>
-          </li>
-        </ul>
+    <header class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img class="tamimg" src="../img/pngegg.png" alt="logo de cafe" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 letranav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
     </header>
 
-    <main class="contenedorNosotros">
+    <main>
       <h1 class="tituloNosotros">Sobre nosotros</h1>
 
       <h2 class="espacioBottom">Diseño ecológico</h2>
@@ -109,20 +126,62 @@
       </p>
     </main>
 
-      <!-- footer -->
+    <!-- Línea horizontal antes del footer -->
+    <hr class="my-4" />
 
-      <footer>
-        <h3 class="espacioFooter">
-          Marca Coffe Shop es una marca registrada. © 2023 Diseño y desarrollo por
-          Abril.
-        </h3>
-        <h4 class="espacioFooter2">GRACIAS POR TU VISITA ¡HASTA PRONTO!</h4>
-      </footer>
+    <!-- Pie de página -->
+
+    <!-- Pie de página -->
+
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Información de contacto -->
+            <span class="footer">Contacto</span>
+            <p>Dirección: Dorrego 4659 | Teléfono: 195-426-7037</p>
+            <p>Email: coffeeshop@gmail.com</p>
+          </div>
+          <div class="col-md-6">
+            <!-- Redes sociales -->
+            <span class="footer">Síguenos</span>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <p>
+              <!--perfiles de redes sociales -->
+              <a href="[Enlace de Facebook]"
+                ><i class="fab fa-facebook"></i> Facebook</a
+              >
+              |
+              <a href="[Enlace de Twitter]"
+                ><i class="fab fa-twitter"></i> Twitter</a
+              >
+              |
+              <a href="[Enlace de Instagram]"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Derechos de autor y mensaje de agradecimiento -->
+            <p class="mt-3">
+              &copy; 2023 Coffee Shop. Todos los derechos reservados.
+            </p>
+            <p>¡Gracias por tu visita! ¡Esperamos verte pronto!</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- BS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/2b9cdc1c9a.js"
       crossorigin="anonymous"
     ></script>
   </body>

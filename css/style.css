@@ -8,6 +8,7 @@
 body {
   background-color: rgb(255, 255, 255);
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 /* header */
@@ -15,15 +16,6 @@ header {
   border-bottom: 1px solid black;
   padding: 10px 20px;
   text-align: center;
-}
-
-.logo {
-  width: 180px;
-}
-
-.tamimg {
-  width: 130px;
-  margin-left: 20px;
 }
 
 .letranav {
@@ -49,12 +41,29 @@ a {
   color: rgb(81, 53, 40);
 }
 
+.logo {
+  width: 180px;
+}
+
+.tamimg {
+  width: 130px;
+  margin-left: 20px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
 .encabezado {
-  height: auto;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
 }
-.encabezado .boton {
+
+.boton {
   display: none;
 }
 
@@ -63,14 +72,94 @@ a {
   font-size: 2.5rem;
 }
 
-/* Menu */
+/* HOME */
+
+/* Main */
+main {
+  margin: 30px;
+  padding: 30px;
+}
+
+.tituloPrincipal {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.tituloSecundario {
+  margin-top: 25px;
+  margin-bottom: 70px;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.parrafoPrincipal {
+  padding-inline: 60px;
+}
+
+.tituloh5 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.marginP {
+  padding-inline: 60px;
+  margin-bottom: 70px;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+/* Cards */
+.colorBtn {
+  background-color: rgb(81, 53, 40);
+  border-color: rgb(81, 53, 40);
+}
+
+.margincards {
+  margin: 24px;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgCard {
+  padding: 0;
+}
+
+/* carrousel */
+.carousel-inner {
+  height: 0;
+  padding-bottom: 25%;
+}
+
+.carousel-item {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MENÚ */
 .tituloMenu {
   margin-bottom: 20px;
 }
 
-.tituloMenu2 {
+.descripcionMenu2 {
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.tituloMenu3 {
   font-weight: 400;
-  margin-bottom: 80px;
 }
 
 .contenedorImg {
@@ -91,12 +180,11 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 50px;
 }
 
-.tituloGaleria {
-  margin-bottom: 0px;
-}
-
+/* GALERIA */
 .tamañoimggal {
   margin: 24px;
   gap: 32px;
@@ -137,31 +225,34 @@ a {
 }
 
 .marginh4 {
+  margin-top: 35px;
   margin-bottom: 90px;
-  font-weight: 300;
-  font-size: 22px;
+  font-weight: 100;
+  font-size: 19px;
 }
 
-/* Sobre nosotros */
+/* SOBRE NOSOTROS */
 .tituloNosotros {
-  margin-bottom: 40px;
-}
-
-.contenedorNosotros {
-  padding-inline: 250px;
+  margin-bottom: 50px;
 }
 
 .espacioBottom {
-  margin: 24px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .espacioBottomx2 {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 100;
 }
 
-/* Contacto */
-.tituloContacto {
-  margin-bottom: 40px;
+/* CONTACTO*/
+.tituloContactoGal {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 900px) {
@@ -170,7 +261,12 @@ a {
   }
 }
 .contenedorCampo {
-  margin-inline: 0px;
+  margin-inline: 0;
+}
+
+.infoPers {
+  margin-bottom: 50px;
+  font-weight: 100;
 }
 
 form {
@@ -184,15 +280,14 @@ label {
   color: black;
 }
 
-input[type=text],
+input[type="text"],
 textarea {
   display: block;
   width: 100%;
   padding: 10px;
   border: 2px solid black;
-  border-radius: 16px;
+  border-radius: 12px;
   font-size: 12px;
-  margin-bottom: 16px;
   resize: none;
   margin-bottom: 60px;
 }
@@ -212,25 +307,15 @@ textarea {
 }
 
 /* Footer */
-.espacioFooter {
-  margin-top: 40px;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
 
-.espacioFooter2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.logoFooter {
-  width: 150px;
-  margin-left: 30px;
+.footer {
+  font-size: 21px;
 }
 
 /* Responsive */
 /* Vista tablet */
 /* 768px-1023px */
+
 @media (max-width: 1023px) {
   /* header */
   .encabezado {
@@ -238,68 +323,9 @@ textarea {
     flex-direction: column;
     text-align: center;
   }
-  .encabezado .boton {
+  .boton {
     display: none;
   }
-}
-/* Main */
-main {
-  margin: 30px;
-  padding: 30px;
-}
-
-h1,
-h2 {
-  text-decoration: 20px 0px;
-}
-
-.tituloPrincipal {
-  margin-bottom: 20px;
-}
-
-.tituloSecundario {
-  margin-bottom: 40px;
-  font-weight: 400;
-  font-size: 32px;
-}
-
-.parrafoPrincipal {
-  padding-inline: 60px;
-}
-
-/* Cards */
-.colorBtn {
-  background-color: rgb(81, 53, 40);
-  border-color: rgb(81, 53, 40);
-}
-
-.margincards {
-  margin: 24px;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
-}
-
-.imgCard {
-  padding: 0;
-}
-
-/* carrousel */
-.carousel-inner {
-  height: 0;
-  padding-bottom: 25%;
-}
-
-.carousel-item {
-  position: absolute !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.carousel-item img {
-  height: 100%;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

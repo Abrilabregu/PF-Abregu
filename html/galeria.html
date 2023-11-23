@@ -1,117 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Metaetiquetas -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="¡Hola y bienvenidos a 'Coffee Shop'! Nos alegra mucho verte aquí. En nuestro rincón del sabor y el aroma, encontrarás una experiencia única de café que te transportará a diferentes partes del mundo. ¿Listos para explorar los sabores? ¡Comencemos!le¡Bienvenidos a una deliciosa aventura en imágenes! En 'Café Aromas del Mundo', hemos capturado los momentos más especiales de nuestro café, desde las tazas de café perfectamente preparadas hasta los pasteles recién horneados y los cálidos encuentros con amigos. Nuestra galería de fotos es una ventana a nuestra pasión por el café y la hospitalidad. Explora, sueña y déjate inspirar por el mundo de los aromas."/>
-    
-    <!-- BS -->
+    <meta
+      name="description"
+      content="Explora la esencia visual a través de nuestra galería de imágenes. Descubre momentos cautivadores, delicias irresistibles y la atmósfera acogedora que te espera en nuestro café."
+    />
+    <title>Galeria | Coffee Shop</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
     <!-- MI CSS PERSONAL -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <!-- NAVBAR BS -->
-
-  <header class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img class="tamimg" src="../img/pngegg.png" alt="logo de cafe" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 letranav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./menu.html">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./galeria.html">Galeria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">Contacto</a>
-          </li>
-          </li>
-        </ul>
+  <body>
+    <!-- Navbar Bootstrap -->
+    <header class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img class="tamimg" src="../img/pngegg.png" alt="logo de cafe" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 letranav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-
+    <!-- Contenido principal -->
     <main>
-      <h1 class="espacioBottom">Conoce nuestra galeria de fotos</h1>
-      <h2 class="marginh4" >
+      <h1 class="tituloContactoGal">Galeria</h1>
+      <h2 class="espacioBottom">Conoce nuestra galeria de fotos</h2>
+      <h3 class="marginh4">
         Quizás no haya mejor manera de comunicar lo que hacemos que a través de
         imágenes. Mientras navega por nuestro sitio, tómese unos momentos para
         dejar que sus ojos se detengan aquí y vea si puede sentir nuestro toque
         característico.
-      </h2>
-      
-<!-- cards imagenes bs -->
+      </h3>
+
+      <!-- cards imagenes bs -->
 
       <div class="row tamañoimggal">
         <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
-            <img src="../img/tortadedulcedelecheychocolate.jpg" class="card-img-top" alt="imagen de unatorta de dulce de leche y chocolate">
-            <div class="card-body">
-              <p class="card-text">Nuestra riquisima torta de dulce de leche y chocolate.</p>
-            </div>
-          </div>
-
-          <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
-            <img src="../img/cafeparavos.jpg" class="card-img-top" alt="imagen de latte con formitas de corazon">
-            <div class="card-body">
-              <p class="card-text">Les presentamos el mejor latte con formitas de corazon</p>
-            </div>
-          </div>
-
-
-          <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
-            <img src="../img/cafe-gatito.jpg" class="card-img-top" alt="imagen de cafe con forma de gatito ">
-            <div class="card-body">
-              <p class="card-text">Nuestro único y especial cafe con forma de gatito </p>
+          <img
+            src="../img/tortadedulcedelecheychocolate.jpg"
+            class="card-img-top"
+            alt="imagen de una torta de dulce de leche y chocolate"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Nuestra riquisima torta de dulce de leche y chocolate.
+            </p>
           </div>
         </div>
 
         <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
-          <img src="../img/frappedecafe.jpg" class="card-img-top" alt="imagen de un frappe de cafe">
+          <img
+            src="../img/cafeparavos.jpg"
+            class="card-img-top"
+            alt="imagen de latte con formitas de corazon"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Les presentamos el mejor latte con formitas de corazon
+            </p>
+          </div>
+        </div>
+
+        <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
+          <img
+            src="../img/cafe-gatito.jpg"
+            class="card-img-top"
+            alt="imagen de cafe con forma de gatito"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Nuestro único y especial cafe con forma de gatito
+            </p>
+          </div>
+        </div>
+
+        <div class="card col-xl-3 col-md-6 col-sm-12 imgCard">
+          <img
+            src="../img/frappedecafe.jpg"
+            class="card-img-top"
+            alt="imagen de un frappe de cafe"
+          />
           <div class="card-body">
             <p class="card-text">Preparando un frappe de cafe</p>
+          </div>
         </div>
       </div>
- </main>
+    </main>
 
-   <!-- footer -->
+    <!-- Línea horizontal antes del footer -->
+    <hr class="my-4" />
 
+    <!-- Pie de página -->
 
-   <footer>
-    <h3 class="espacioFooter">
-      Marca Coffe Shop es una marca registrada. © 2023 Diseño y desarrollo por
-      Abril.
-    </h3>
-    <h4 class="espacioFooter2">GRACIAS POR TU VISITA ¡HASTA PRONTO!</h4>
-  </footer>
+    <!-- footer -->
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Información de contacto -->
+            <span class="footer">Contacto</span>
+            <p>Dirección: Dorrego 4659 | Teléfono: 195-426-7037</p>
+            <p>Email: coffeeshop@gmail.com</p>
+          </div>
+          <div class="col-md-6">
+            <!-- Redes sociales -->
+            <span class="footer">Síguenos</span>
+            <p>Síguenos en nuestras redes sociales:</p>
+            <p>
+              <!--perfiles de redes sociales -->
+              <a href="[Enlace de Facebook]"
+                ><i class="fab fa-facebook"></i> Facebook</a
+              >
+              |
+              <a href="[Enlace de Twitter]"
+                ><i class="fab fa-twitter"></i> Twitter</a
+              >
+              |
+              <a href="[Enlace de Instagram]"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Derechos de autor y mensaje de agradecimiento -->
+            <p class="mt-3">
+              &copy; 2023 Coffee Shop. Todos los derechos reservados.
+            </p>
+            <p>¡Gracias por tu visita! ¡Esperamos verte pronto!</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- BS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/2b9cdc1c9a.js"
       crossorigin="anonymous"
     ></script>
   </body>

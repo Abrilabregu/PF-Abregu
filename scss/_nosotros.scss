@@ -1,17 +1,23 @@
 /* Sobre nosotros */
 
 .tituloNosotros {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-.contenedorNosotros {
-  padding-inline: 250px;
+@mixin espacioBase {
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .espacioBottom {
-  margin: 24px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .espacioBottomx2 {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  margin-top: 15px;
+  @include espacioBase;
 }

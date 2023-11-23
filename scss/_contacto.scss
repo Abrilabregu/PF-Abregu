@@ -1,17 +1,22 @@
 /* Contacto */
 
-.tituloContacto {
-  margin-bottom: 40px;
+.tituloContactoGal {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 900px) {
   .contenedorCampo {
-    margin-inline: 200px !important;
+    margin-inline: 200px;
   }
 }
 
 .contenedorCampo {
-  margin-inline: 0px;
+  margin-inline: 0;
+}
+
+.infoPers {
+  margin-bottom: 50px;
+  font-weight: 100;
 }
 
 form {
@@ -22,7 +27,7 @@ label {
   display: block;
   font-weight: bold;
   margin-bottom: 4px;
-  color: $color-boton-negro;
+  color: $colorBotonNegro;
 }
 
 input[type="text"],
@@ -30,17 +35,16 @@ textarea {
   display: block;
   width: 100%;
   padding: 10px;
-  border: 2px solid $color-boton-negro;
-  border-radius: 16px;
+  border: 2px solid $colorBotonNegro;
+  border-radius: 12px;
   font-size: 12px;
-  margin-bottom: 16px;
   resize: none;
   margin-bottom: 60px;
 }
 
 .botonContacto {
-  background-color: $color-boton-negro;
-  color: white;
+  background-color: $colorBotonNegro;
+  color: $colorBlanco;
   border: none;
   padding: 10px 20px;
   border-radius: 8px;

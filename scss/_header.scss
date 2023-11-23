@@ -1,50 +1,56 @@
 /* header */
-@mixin estilo {
+@mixin estilo($color: inherit, $hover-color: silver) {
   text-decoration: none;
   text-transform: uppercase;
-}
+  color: $color;
 
-header {
-  border-bottom: 1px solid $color-boton-negro;
-  padding: 10px 20px;
-  text-align: center;
-}
-
-.logo {
-  width: 180px;
-}
-
-.tamimg {
-  width: 130px;
-  margin-left: 20px;
-}
-
-.letranav {
-  font-size: 20px;
-  font-weight: semibold;
-  text-transform: uppercase;
-  padding-left: 30px;
-
-  a:hover {
-    color: silver;
+  &:hover {
+    color: $hover-color;
   }
 }
 
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 10px;
-}
+header {
+  border-bottom: 1px solid $colorBotonNegro;
+  padding: 10px 20px;
+  text-align: center;
 
-a {
-  @include estilo;
-  font-weight: bold;
-  color: $color-boton-marron;
+  .letranav {
+    font-size: 20px;
+    font-weight: semibold;
+    text-transform: uppercase;
+    padding-left: 30px;
+
+    a {
+      @include estilo($color: $colorBtn);
+      font-weight: bold;
+    }
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .tamimg {
+    width: 130px;
+    margin-left: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
 }
 
 .encabezado {
-  height: auto;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
 
   .boton {

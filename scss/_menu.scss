@@ -4,14 +4,20 @@
   margin-bottom: 20px;
 }
 
-.tituloMenu2 {
+.descripcionMenu2 {
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.tituloMenu3 {
   font-weight: 400;
-  margin-bottom: 80px;
 }
 
 .contenedorImg {
   margin: 30px;
-  border: 2px solid #5b5b5b;
+  border: 2px solid $color-borde;
   border-radius: 100%;
   width: 200px;
 }
@@ -27,4 +33,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 50px;
 }
